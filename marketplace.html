@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace - BAWSAQ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="navbar">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="portfolio.html" class="nav-button">Portfolio</a>
+        <div class="balance">Balance: $<span id="balance">1000</span></div>
+      </div>
+      <h1>Marketplace</h1>
+      <div class="stock-list">
+        <div class="stock" id="stock-weazel">
+          <h3>Weazel News</h3>
+          <p>Price: $<span class="price" id="price-weazel">100</span></p>
+          <div class="stock-actions">
+            <button class="buy-btn" onclick="buyStock('weazel')">Buy</button>
+            <button class="sell-btn" onclick="sellStock('weazel')">Sell</button>
+          </div>
+          <span id="price-change-weazel" class="price-change"></span>
+        </div>
+      </div>
+    </header>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
